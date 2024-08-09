@@ -1,0 +1,35 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="d-flex flex-row align-items-center gap-4">
+
+    <p class="text-center mb-2 fs-3">Температура и влажность</p>
+</div>
+
+
+<div class="col-md-8 col-sm-12">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Время</th>
+            <th scope="col">Температура</th>
+            <th scope="col">Влажность</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in items %}
+
+        <tr>
+            <td>{{ item.data_time }}</td>
+            <td>{{ item.temperature }} °C</td>
+            <td>{{ item.vlagnost }} %</td>
+        </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock %}
