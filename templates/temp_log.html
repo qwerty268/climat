@@ -1,5 +1,6 @@
 {% extends "layouts/base.html" %}
 {% load static %}
+{% load bootstrap4 %}
 
 {% block content %}
 <div class="d-flex flex-row align-items-center gap-4">
@@ -9,6 +10,20 @@
 
 
 <div class="col-md-8 col-sm-12">
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col">
+                <p>Выберите дату:</p>
+            </div>
+            <div class="col">
+               {{ form }}
+            </div>
+            <div class="col">
+                <input type="submit" value="Выбрать">
+            </div>
+        </div>
+    </form>
     <table class="table">
         <thead>
         <tr>

@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'app',
+    'django_extensions',
+    'bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -80,7 +82,7 @@ DATABASES = {
         'NAME': 'climat',
         'USER': 'interface',
         'PASSWORD': 'fit-ton',
-        'HOST': '192.168.9.100',
+        'HOST': 'localhost',
 
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',

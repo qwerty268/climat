@@ -10,5 +10,4 @@ class ParametrT(models.Model):
     status_sens = models.CharField(db_column='Status_sens', max_length=1, db_collation='Cyrillic_General_CI_AS', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'Parametr_T'
