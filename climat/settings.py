@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'climat',
         'USER': 'interface',
         'PASSWORD': 'fit-ton',
-        'HOST': 'localhost',
+        'HOST': '192.168.9.100',
 
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
